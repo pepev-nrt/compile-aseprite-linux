@@ -44,7 +44,7 @@ cleanup() {
 
 trap "cleanup" EXIT
 
-pushd "${WORK_DIR}"
+pushd "${WORK_DIR}" > /dev/null
 
 # Download latest version of aseprite
 # SOURCE_CODE is a link like https://github.com/aseprite/aseprite/releases/download/vX.X.X.X/Aseprite-vX.X.X.X-Source.zip
@@ -95,13 +95,13 @@ fi
 [[ $? == 0 ]] \
     || { echo "Failed to install dependencies." >&2 ; exit 1 ; }
 
-pushd aseprite
+pushd aseprite > /dev/null
 
 # Compile Aseprite with the provided build.sh script in the source code
 ./build.sh --auto --norun \
     || { echo "Compilation failed." >&2 ; exit 1 ; }
 
-popd
+popd > /dev/null
 
 rm -rf "${INSTALL_DIR}" \
     || { echo "Unable to clean up old install." >&2 ; exit 1 ; }
