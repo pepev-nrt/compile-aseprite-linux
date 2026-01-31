@@ -16,5 +16,11 @@ The executable is stored in ~/.local/share/aseprite. Have fun!
 This script automatically adds Aseprite to your desktop environment's application launcher and to $PATH.
 You can launch it from your desktop environment's application launcher or by entering `aseprite` in the terminal.
 
+## Uninstall
+It's possible to remove all the files created with the compile.sh script. It's important to mention that your configuration in ~/.config/aseprite will remain intact, so you won't loose any configuration, theme or template installed. To do that, just execute the following script:
+```bash
+bash -c "$(curl -sSf 'https://raw.githubusercontent.com/mak448a/compile-aseprite-linux/refs/heads/main/uninstall.sh')"
+```
+
 ## Credits
 I used [Aseprite's official compilation guide](https://github.com/aseprite/aseprite/blob/main/INSTALL.md) to make this script.
