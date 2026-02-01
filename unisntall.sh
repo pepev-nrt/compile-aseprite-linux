@@ -27,4 +27,4 @@ rm "${LAUNCHER_FILE}" \
 rm -r "${INSTALL_DIR}" \
     || { echo "Unable to remove '${INSTALL_DIR}'." >&2 ; exit 1 ; }
 
-echo "Aseprite uninstalled successfully!"
+echo "Aseprite uninstalled successfully! Your configuration, themes, or installed templates in ~/.config/aseprite will not be deleted."
