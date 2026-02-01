@@ -17,7 +17,7 @@ This script automatically adds Aseprite to your desktop environment's applicatio
 You can launch it from your desktop environment's application launcher or by entering `aseprite` in the terminal.
 
 ## Uninstall
-Your configuration, themes, or installed templates in ~/.config/aseprite will not be deleted. To remove all files created by the compile.sh script, paste this command:
+To remove all files created by the compile.sh script, paste this command. Your configuration, themes, or installed templates in ~/.config/aseprite will not be deleted.
 ```bash
 bash -c "$(curl -sSf 'https://raw.githubusercontent.com/mak448a/compile-aseprite-linux/refs/heads/main/uninstall.sh')"
 ```
