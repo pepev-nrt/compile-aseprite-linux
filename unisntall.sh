@@ -20,11 +20,11 @@ else
         && exit 0
 fi
 
-rm -rf "${BINARY_FILE}" \
+rm "${BINARY_FILE}" \
     || { echo "Unable to remove '${BINARY_FILE}'." >&2 ; exit 1 ; }
-rm -rf "${LAUNCHER_FILE}" \
+rm "${LAUNCHER_FILE}" \
     || { echo "Unable to remove '${LAUNCHER_FILE}'." >&2 ; exit 1 ; }
-rm -rf "${INSTALL_DIR}" \
+rm -r "${INSTALL_DIR}" \
     || { echo "Unable to remove '${INSTALL_DIR}'." >&2 ; exit 1 ; }
 
 echo "Aseprite uninstalled successfully!"
